@@ -136,7 +136,7 @@
                         <!--ITEMS DEL MENU -->
                         <li><a class="active-menu"  href="inicio"><i class="fa fa-dashboard "></i>Inicio</a></li>
                         <li><a href="clientes"><i class="fa fa-user"></i>Clientes</a></li>
-                        <li><a href="cotizaciones"><i class="fa fa-cubes"></i>Cotizaciones</a></li>
+                        <li><a href="c"><i class="fa fa-cubes"></i>Cotizaciones</a></li>
                         <li>
                             <a href="#">
                                 <i class="fa fa-cogs"></i>Admin<span class="fa arrow"></span>
