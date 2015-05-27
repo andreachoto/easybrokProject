@@ -11,24 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-//Modulo de Administracion
-Route::get('administracion-tipoidentificacion','TipoIdentificacionController@index');
-Route::get('administracion-tipoidentificacion-crear','TipoIdentificacionController@crearTipoIdentificacion');
-Route::get('administracion-tipoidentificacion-modificar','TipoIdentificacionController@modificarTipoIdentificacion');
-Route::get('administracion-tipoidentificacion-eliminar','TipoIdentificacionController@eliminarTipoIdentificacion');
-Route::get('administracion-tipoidentificacion-listar','TipoIdentificacionController@listarTipoIdentificacion');
-
-Route::get('administracion-actividadeconomica','ActividadEconomicaController@index');
-Route::get('administracion-actividadeconomica-crear','ActividadEconomicaController@crearActividadEconomica');
-Route::get('administracion-actividadeconomica-modificar','ActividadEconomicaController@modificarActividadEconomica');
-Route::get('administracion-actividadeconomica-eliminar','ActividadEconomicaController@eliminarActividadEconomica');
-Route::get('administracion-actividadeconomica-listar','ActividadEconomicaController@listarActividadEconomica');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('/', 'WelcomeController@inicio');
+Route::get('inicio', 'WelcomeController@inicio');
+Route::get('clientes', 'WelcomeController@clientes');
+Route::get('cotizaciones', 'WelcomeController@cotizaciones');
