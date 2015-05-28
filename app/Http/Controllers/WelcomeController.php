@@ -38,7 +38,7 @@ class WelcomeController extends Controller {
         
     }
     public function cotizaciones() {
-       //return 'Estoy en clientes';
+       //return 'Estoy en cotizaciones';
        return view('clients.cotizaciones');
         
     }
