@@ -55,8 +55,8 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
+			'database'  => env('DB_DATABASE', 'practica'),
+			'username'  => env('DB_USERNAME', 'root'),
 			'password'  => env('DB_PASSWORD', ''),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
@@ -116,10 +116,9 @@ return [
 
 		'default' => [
 			'host'     => '127.0.0.1',
-			'port'     => 6379,
-			'database' => 0,
+			'port'     => '3306',
+			'database' => 'practica',
 		],
-
 	],
 
 ];
