@@ -29,7 +29,8 @@ class WelcomeController extends Controller {
      * @return Response
      */
     public function inicio() {
-        return view('welcome');
+       return view('welcome');
+       
     }
 
     public function clientes() {
