@@ -10,14 +10,18 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+//
 Route::get('/', 'WelcomeController@inicio');
 Route::get('inicio', 'WelcomeController@inicio');
 Route::get('clientes', 'WelcomeController@clientes');
 Route::get('cotizaciones', 'WelcomeController@cotizaciones');
-
-/*Administraciçon Cargo*/
-
+//
+///*Administraciçon Cargo*/
+//
 Route::get('crear','CargosController@create');
 Route::post('guardar','CargosController@store');
 Route::get('listar','CargosController@lista');
+//Route::get('{id}/edit','CargosController@edit');
+Route::get('{id}/edit','CargosController@edit');
+//Route::resource('cargos','CargosController');
+

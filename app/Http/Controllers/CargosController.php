@@ -3,7 +3,7 @@
 use App\Http\Controllers\Controller;
 use Request;
 use App\Tmp_cargo;
-
+use App\Http\Requests;
 
 class CargosController extends Controller {
 
@@ -56,7 +56,8 @@ class CargosController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+        $cargo=  CargosController::find($id);
+        return($cargo);
 	}
 
 	/**
@@ -67,7 +68,9 @@ class CargosController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+        $cargo=  CargosController::find($id);
+        return($cargo);
+       
 	}
 
 	/**
@@ -89,7 +92,8 @@ class CargosController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
 	}
+
+    
 
 }

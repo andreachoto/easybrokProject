@@ -12,6 +12,7 @@
 
                         {!!Form ::open(['url'=>'guardar'])!!} 
                         <div class="form-group">
+                            <input id = "id" class="with-3d-shadow" value="Valor" on/>
                             {!! Form:: label('nombre','Nombre:')!!}
                             {!! Form:: text('NOMBRE',null,['class'=>'form-control'])!!}
                         </div>
@@ -34,17 +35,13 @@
                         <div class="form-group">
                             {!! Form:: submit('guardar',['class'=>'btn btn-primary form-control'])!!}
                         </div>
-
-
-                        {!! Form:: close()!!}
+{!! Form:: close()!!}
                     </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 @endsection
 
 
