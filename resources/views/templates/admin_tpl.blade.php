@@ -154,9 +154,9 @@
                                                 <li>
                                                    <a href="#">Cargos<span class="fa arrow"></span></a>
                                                     <ul class="nav nav-third-level">
-                                                        <li><a href="crear"> 1. Ingreso</a></li>
-                                                        <li><a href="listar"> 2. Listar</a></li>
-                                                        <li><a href="1/edit"> 3. Modificar</a></li>
+                                                        <li><a href="cargos/create"> 1. Ingreso</a></li>
+                                                        <li><a href="cargos/listar"> 2. Listar</a></li>
+                                                        <li><a href="cargos/show"> 3. Modificar</a></li>
                                                         <li><a href="#"> 4. Eliminar</a></li>
                                                     </ul>
                                                 </li>
