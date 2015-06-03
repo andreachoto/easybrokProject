@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\Controller;
 use Request;
-use App\Tmp_cargo;
 use App\Http\Requests;
+use App\Tmp_cargo;
 
 class CargosController extends Controller {
 
@@ -54,11 +54,18 @@ class CargosController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+//	public function show($id)
+//	{
+//        $cargo=  CargosController::find($id);
+//        return($cargo);
+//	}
+        
+        public function show()
 	{
-        $cargo=  CargosController::find($id);
-        return($cargo);
+        $cargos= Tmp_cargo::all(); //tiene que ir deley esto para que se pueda listar aqui se selecciona los datos de la tabla
+        return view('cargo.listar',compact('cargos'));
 	}
+        
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -68,10 +75,10 @@ class CargosController extends Controller {
 	 */
 	public function edit($id)
 	{
-        $cargo=  CargosController::find($id);
-        return($cargo);
-       
-	}
+        $cargo= Tmp_cargo::find($id);
+        return view ('cargo.edit', compact('cargo'));
+         //return  ($cargo);
+        }
 
 	/**
 	 * Update the specified resource in storage.
@@ -79,10 +86,20 @@ class CargosController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
-	{
-		//
-	}
+	
+        
+        
+        
+         public function update($id,Requests\CreateCargoRequest $request){
+        
+        $cargo= Tmp_cargo::find($id);
+        $cargo->update($request->all());
+        $mensaje='Guardado Correctamente';
+        return view('cargo.index')->with('mensajes',$mensaje);
+        
+          }
+        
+        
 
 	/**
 	 * Remove the specified resource from storage.
@@ -92,6 +109,11 @@ class CargosController extends Controller {
 	 */
 	public function destroy($id)
 	{
+           $cargo=Tmp_cargo::find($id);
+           $cargo->delete();
+           //$mensaje='Eliminado Correctamente';
+           //return view('cargo.index')->with('mensajes',$mensaje);
+            return($cargo);
 	}
 
     
