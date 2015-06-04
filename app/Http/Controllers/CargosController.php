@@ -24,7 +24,10 @@ class CargosController extends Controller {
 	 */
 	public function create()
 	{
-	    return view('cargo.crear');	
+	    
+            return view('cargo.crear');
+            
+          
             
 	}
         
@@ -64,7 +67,10 @@ class CargosController extends Controller {
 	{
         $cargos= Tmp_cargo::all(); //tiene que ir deley esto para que se pueda listar aqui se selecciona los datos de la tabla
         return view('cargo.listar',compact('cargos'));
-	}
+        }
+        
+      
+      
         
 
 	/**
@@ -77,7 +83,14 @@ class CargosController extends Controller {
 	{
         $cargo= Tmp_cargo::find($id);
         return view ('cargo.edit', compact('cargo'));
-         //return  ($cargo);
+         
+        }
+        
+        public function view($id)
+	{
+        $cargo= Tmp_cargo::find($id);
+        return view ('cargo.view', compact('cargo'));
+         
         }
 
 	/**
@@ -111,9 +124,9 @@ class CargosController extends Controller {
 	{
            $cargo=Tmp_cargo::find($id);
            $cargo->delete();
-           //$mensaje='Eliminado Correctamente';
-           //return view('cargo.index')->with('mensajes',$mensaje);
-            return($cargo);
+           $mensaje='Eliminado Correctamente';
+           return view('cargo.index')->with('mensajes',$mensaje);
+            
 	}
 
     
