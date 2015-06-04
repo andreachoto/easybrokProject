@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-06-2015 a las 16:03:38
+-- Tiempo de generación: 04-06-2015 a las 23:14:39
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -37,6 +37,10 @@ CREATE TABLE IF NOT EXISTS `migrations` (
 
 INSERT INTO `migrations` (`migration`, `batch`) VALUES
 ('2014_10_12_000000_create_users_table', 1),
+('2014_10_12_100000_create_password_resets_table', 1),
+('2014_10_12_000000_create_users_table', 1),
+('2014_10_12_100000_create_password_resets_table', 1),
+('2014_10_12_000000_create_users_table', 1),
 ('2014_10_12_100000_create_password_resets_table', 1);
 
 -- --------------------------------------------------------
@@ -58,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `password_resets` (
 --
 
 CREATE TABLE IF NOT EXISTS `tmp_cargo` (
-  `ID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `NOMBRE` varchar(50) NOT NULL,
   `CREACION` varchar(50) NOT NULL,
   `USUARIOCREACION` int(11) NOT NULL,
@@ -73,13 +77,9 @@ CREATE TABLE IF NOT EXISTS `tmp_cargo` (
 -- Volcado de datos para la tabla `tmp_cargo`
 --
 
-INSERT INTO `tmp_cargo` (`ID`, `NOMBRE`, `CREACION`, `USUARIOCREACION`, `MODIFICACION`, `USUARIOMODIFICACION`, `ESTADO`, `created_at`, `updated_at`) VALUES
-(1, '', '', 0, '', 0, '', 0, 0),
-(0, 'sdfsdf', 'sdfsdf', 1, '', 0, 'asdsdsd', 2015, 2015),
-(0, 'erw', 'rwerwe', 0, '', 0, 'werwe', 2015, 2015),
-(0, 'sdfsdf', 'dsfsdf', 0, '', 0, 'sdfsdfsd', 2015, 2015),
-(0, '', '', 0, '', 0, '', 2015, 2015),
-(0, 'Comprador', '2/01/2015', 1, '', 0, 'Activo', 2015, 2015);
+INSERT INTO `tmp_cargo` (`id`, `NOMBRE`, `CREACION`, `USUARIOCREACION`, `MODIFICACION`, `USUARIOMODIFICACION`, `ESTADO`, `created_at`, `updated_at`) VALUES
+(15, 'Comprador11', '04/06/2015', 0, '', 0, '', 0, 2015),
+(16, 'Vendedor', '04/06/2015', 0, '', 0, '', 0, 0);
 
 -- --------------------------------------------------------
 

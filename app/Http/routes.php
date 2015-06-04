@@ -25,4 +25,4 @@ Route::get('cotizaciones', 'WelcomeController@cotizaciones');
 //Route::get('{id}/edit','CargosController@edit');
 
 Route::resource('cargos','CargosController');
-
+Route::get('cargos/{id}/view','CargosController@view');

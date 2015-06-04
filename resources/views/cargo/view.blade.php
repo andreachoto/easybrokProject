@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Editar Cargos</div>
+                <div class="panel-heading">Información Usuario</div>
 
                 {{$cargo->NOMBRE}}
                 {!!Form ::model($cargo,['method'=>'PATCH','action'=>['CargosController@update',$cargo->id] ])!!} 
@@ -33,14 +33,8 @@
                     {!! Form:: text('ESTADO',null,['class'=>'form-control'])!!}
                 </div>
 
-                <div class="form-group">
-                    {!! Form:: submit('Modificar',['class'=>'btn btn-primary form-control'])!!}
-                </div>
                 {!! Form:: close()!!}
-
-
-
-            </div>
+                </div>
         </div>
     </div>
 </div>
