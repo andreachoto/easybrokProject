@@ -1,8 +1,8 @@
 <?php namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
-use App\Tmp_cargo;
-class Create extends Request {
+
+class CreateConcesionarioRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -11,7 +11,7 @@ class Create extends Request {
 	 */
 	public function authorize()
 	{
-		return false;
+		return true;
 	}
 
 	/**
@@ -22,9 +22,7 @@ class Create extends Request {
 	public function rules()
 	{
 		return [
-		
-                    'NOMBRE'=>'required'
-                    
+			//
 		];
 	}
 

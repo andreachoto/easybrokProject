@@ -132,7 +132,7 @@
                                 <img src="assets/img/user.jpg" class="img-circle" />
                             </div>
                         </li>
-                        <li><a  href="#"> <strong> Andrea Choto </strong></a></li>
+                        <li><a  href="#"> <strong> Citytech  </strong></a></li>
                         <!--ITEMS DEL MENU -->
                         <li><a class="active-menu"  href="inicio"><i class="fa fa-dashboard "></i>Inicio</a></li>
                         <li><a href="clientes"><i class="fa fa-user"></i>Clientes</a></li>
@@ -154,9 +154,9 @@
                                                 <li>
                                                    <a href="#">Cargos<span class="fa arrow"></span></a>
                                                     <ul class="nav nav-third-level">
-                                                        <li><a href="crear"> 1. Ingreso</a></li>
+                                                        <li><a href="create"> 1. Ingreso</a></li>
                                                         <li><a href="listar"> 2. Listar</a></li>
-                                                        <li><a href="1/edit"> 3. Modificar</a></li>
+                                                        <li><a href="cargos/show"> 3. Modificar</a></li>
                                                         <li><a href="#"> 4. Eliminar</a></li>
                                                     </ul>
                                                 </li>
@@ -165,9 +165,9 @@
                                                 <li>
                                                    <a href="#">Concesionario<span class="fa arrow"></span></a>
                                                     <ul class="nav nav-third-level">
-                                                        <li><a href="crearC"> 1. Ingreso</a></li>
-                                                        <li><a href="listarC"> 2. Listar</a></li>
-                                                        <li><a href="editC"> 3. Modificar</a></li>
+                                                        <li><a href="concesionario/create"> 1. Ingreso</a></li>
+                                                        <li><a href="concesionario/listar"> 2. Listar</a></li>
+                                                        <li><a href="concesionario/show"> 3. Modificar</a></li>
                                                         
                                                         
                                                     </ul>

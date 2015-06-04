@@ -10,9 +10,18 @@
 
                     <table border="0" cellspacing="1" cellpadding="0" width="100%">
 
-                        {!!Form ::open(['url'=>'guardar'])!!} 
+                        {!!Form ::open(['url'=>'cargos'])!!} 
+                        
+                        
                         <div class="form-group">
-                            <input id = "id" class="with-3d-shadow" value="Valor" on/>
+                           
+                            {!! Form:: label('id','ID:')!!}
+                            {!! Form:: text('id',null,['class'=>'form-control'])!!}
+                        </div>
+
+                        
+                        <div class="form-group">
+                           
                             {!! Form:: label('nombre','Nombre:')!!}
                             {!! Form:: text('NOMBRE',null,['class'=>'form-control'])!!}
                         </div>
@@ -35,7 +44,7 @@
                         <div class="form-group">
                             {!! Form:: submit('guardar',['class'=>'btn btn-primary form-control'])!!}
                         </div>
-{!! Form:: close()!!}
+                        {!! Form:: close()!!}
                     </table>
                 </div>
             </div>

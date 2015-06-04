@@ -68,8 +68,8 @@ class ConcesionarioController extends Controller {
 	 */
 	public function show($id)
 	{
-            $cargo=  CargosController::find($id);
-            return($cargo);
+            $concesionario= tmp_concesionario::all(); //tiene que ir deley esto para que se pueda listar aqui se selecciona los datos de la tabla
+            return view('concesionario.listar',compact('concesionario'));
 	}
 
 	/**
@@ -80,8 +80,8 @@ class ConcesionarioController extends Controller {
 	 */
 	public function edit($id)
 	{
-            $cargo=  CargosController::find($id);
-            return($cargo);
+            $concesionario= Tmp_concesionario::find($id);
+        return view ('concesionario.edit', compact('concesionario'));
 	}
 
 	/**
@@ -93,10 +93,14 @@ class ConcesionarioController extends Controller {
         
                
 
-	public function update($id)
-	{
-		//
-	}
+	public function update($id,Requests\CreateConcesionarioRequest $request){
+        
+        $concesionario= Tmp_concesionario::find($id);
+        $concesionario->update($request->all());
+        $mensaje='Guardado Correctamente';
+        return view('concesionario.index')->with('mensajes',$mensaje);
+        
+          }
 
 	/**
 	 * Remove the specified resource from storage.
@@ -106,7 +110,10 @@ class ConcesionarioController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+	   $concesionario=  tmp_concesionario::find($id);
+           $concesionario->delete();
+           return($concesionario);
 	}
+        
 
 }

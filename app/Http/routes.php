@@ -18,17 +18,14 @@ Route::get('cotizaciones', 'WelcomeController@cotizaciones');
 //
 ///*Administraciçon Cargo*/
 //
-Route::get('crear','CargosController@create');
-Route::post('guardar','CargosController@store');
-Route::get('listar','CargosController@lista');
+//Route::get('crear','CargosController@create');
+//Route::post('guardar','CargosController@store');
+//Route::get('listar','CargosController@lista');
 //Route::get('{id}/edit','CargosController@edit');
-Route::get('{id}/edit','CargosController@edit');
+//Route::get('{id}/edit','CargosController@edit');
 
-Route::get('listarC','ConcesionarioController@listar');
-Route::get('crearC','ConcesionarioController@create');
-Route::post('guardarC','ConcesionarioController@store');
-
-//Route::resource('cargos','CargosController');
+Route::resource('cargos','CargosController');
+Route::resource('concesionario','ConcesionarioController');
 
 
 

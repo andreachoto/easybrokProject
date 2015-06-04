@@ -10,9 +10,16 @@
 
                     <table border="0" cellspacing="1" cellpadding="0" width="100%">
 
-                        {!!Form ::open(['url'=>'guardarC'])!!} 
+                        {!!Form ::open(['url'=>'concesionario'])!!} 
+                       <div class="form-group">
+                           
+                            {!! Form:: label('id','ID:')!!}
+                            {!! Form:: text('id',null,['class'=>'form-control'])!!}
+                        </div>
+
+                        
                         <div class="form-group">
-                            <input id = "id" class="with-3d-shadow" value="Valor" on/>
+                           
                             {!! Form:: label('nombre','Nombre:')!!}
                             {!! Form:: text('NOMBRE',null,['class'=>'form-control'])!!}
                         </div>
@@ -27,7 +34,7 @@
                             {!! Form:: text('USUARIOCREACION',null,['class'=>'form-control'])!!}
                         </div>
                         <div class="form-group">
-                            {!! Form:: label('estado','Estado Concesionario:')!!}
+                            {!! Form:: label('estado','Estado Cargo:')!!}
                             {!! Form:: text('ESTADO',null,['class'=>'form-control'])!!}
                         </div>
                         
@@ -35,7 +42,7 @@
                         <div class="form-group">
                             {!! Form:: submit('guardar',['class'=>'btn btn-primary form-control'])!!}
                         </div>
-{!! Form:: close()!!}
+                        {!! Form:: close()!!}
                     </table>
                 </div>
             </div>

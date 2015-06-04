@@ -12,9 +12,9 @@ class CreateTmpCargosTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tmp_cargos', function(Blueprint $table)
+		Schema::create('tmp_cargo', function(Blueprint $table)
 		{
-			$table->increments('ID');
+			$table->integer('id');
                         $table->string('NOMBRE');
                         $table->string('CREACION');
                         $table->int('USUARIOCREACION');
