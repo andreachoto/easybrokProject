@@ -1,4 +1,4 @@
-@extends('templates.admin_tpl')
+@extends('templates.admincargo_tpl')
 @section('content')
 <div class="container">
     <div class="row">
@@ -16,8 +16,8 @@
                             <td>{{$cargo->USUARIOCREACION}}</td> 
                             <td>{{$cargo->ESTADO}}</td>
                             <td>{{$cargo->id}}</td>
-                            <td> <a href="../cargos/{{$cargo->id}}/edit" class="btn btn-warning"> Editar</</td>
-                            <td> <a href="·" class="btn btn-warning"> Visualizar</a></td>
+                            <td> <a href="../cargos/{{$cargo->id}}/edit" class="btn btn-warning"> Editar</a>                  </td>
+                            <td> <a href="../cargos/{{$cargo->id}}/view" class="btn btn-warning"> Visualizar</a></td>
                             <td>
                                 {!!Form ::model($cargos,['method'=>'DELETE','route'=>['cargos.destroy',$cargo->id] ])!!} 
                                 {!! Form:: submit('Eliminar',['class'=>'btn btn-warning form-control'])!!}

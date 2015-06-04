@@ -5,17 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>e@sybrok</title>
         <!-- BOOTSTRAP STYLES-->
+
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
         <!-- FONTAWESOME ICONS STYLES-->
         <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!--CUSTOM STYLES-->
         <link href="assets/css/style.css" rel="stylesheet" />
+
         <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+
+
+
+
     </head>
     <body>
         <div id="wrapper">
@@ -132,11 +139,11 @@
                                 <img src="assets/img/user.jpg" class="img-circle" />
                             </div>
                         </li>
-                        <li><a  href="#"> <strong> Citytech  </strong></a></li>
+                        <li><a  href="#"> <strong> Andrea Choto </strong></a></li>
                         <!--ITEMS DEL MENU -->
                         <li><a class="active-menu"  href="inicio"><i class="fa fa-dashboard "></i>Inicio</a></li>
                         <li><a href="clientes"><i class="fa fa-user"></i>Clientes</a></li>
-                        <li><a href="cotizaciones"><i class="fa fa-cubes"></i>Cotizaciones</a></li>
+                        <li><a href="c"><i class="fa fa-cubes"></i>Cotizaciones</a></li>
                         <li>
                             <a href="#">
                                 <i class="fa fa-cogs"></i>Admin<span class="fa arrow"></span>
@@ -149,52 +156,48 @@
                                         <li><a href="#">País</a></li>
                                         <li><a href="#">Provincias</a></li>
                                         <li><a href="#">Ciudades</a></li>
-                                                <li>
 
-                                                   <a href="#">Cargos<span class="fa arrow"></span></a>
-                                                    <ul class="nav nav-third-level">
-                                                        <li><a href="create"> 1. Ingreso</a></li>
-                                                        <li><a href="listar"> 2. Listar</a></li>
-                                                        <li><a href="cargos/show"> 3. Modificar</a></li>
-                                                        <li><a href="#"> 4. Eliminar</a></li>
-                                                    </ul>
-
-                                                   <a href="cargos/list">Cargos<span class="fa arrow"></span></a>
-
-                                                </li>
-
+                                        <ul class="nav nav-second-level">
+                                            <li>
+                                                <a href="list">Usuarios<span class="fa arrow"></span></a>
+                                            </li>
+                                            <ul class="nav nav-third-level">
                                             </ul>
-                                         <ul class="nav nav-second-level">
-                                                <li>
-                                                   <a href="#">Concesionario<span class="fa arrow"></span></a>
-                                                    <ul class="nav nav-third-level">
-                                                        <li><a href="concesionario/create"> 1. Ingreso</a></li>
-                                                        <li><a href="concesionario/listar"> 2. Listar</a></li>
-                                                        <li><a href="concesionario/show"> 3. Modificar</a></li>
-                                                        
-                                                        
-                                                    </ul>
-                                                </li>
-                                            </ul>
- </li>
 
-                                      
-                                      </li>
+                                        </ul>
+                                        <ul class="nav nav-second-level">
+                                            <li>
+                                                <a href="#">Cargos<span class="fa arrow"></span></a>
+                                                <ul class="nav nav-third-level">
+                                                    <li><a href="crearcargo"> 1. Ingreso</a></li>
+                                                    <li><a href="listcargos"> 2. Listar</a></li>
 
-                                    </ul>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
                                 </li>
                             </ul>
                         </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </nav>
             <!-- /. SIDEBAR MENU (navbar-side) CONTAINNER -->
             <!-- CONTAINNER -->
-            <div id="page-wrapper" class="page-wrapper-cls"> <!-- PAGE WRAPPER  -->
-                <div id="page-inner"> <!-- PAGE INNER  -->
-                    @yield('content')
-                </div> <!-- /. PAGE INNER  -->
-            </div> <!-- /. PAGE WRAPPER  -->
+           <div id="page-wrapper" class="page-wrapper-cls"> <!-- PAGE WRAPPER  -->
+              
+                        <ul>
+                            <li><a href="create">Crear</a></li>
+                            <li><a href="listar">Editar</a></li>
+                            <br>
+                        </ul>
+              
+                @yield('content')
+               
+            </div> <!-- /. PAGE INNER  -->
+        </div> <!-- /. PAGE WRAPPER  -->
         </div>
         <!-- /. WRAPPER  -->
         <footer > &copy; 2015 <a href="http://www.citytech.ec/" target="_blank">Citytech</a>
@@ -209,7 +212,5 @@
         <script src="assets/js/jquery.metisMenu.js"></script>
         <!-- CUSTOM SCRIPTS -->
         <script src="assets/js/custom.js"></script>
-
-
     </body>
 </html>
