@@ -1,14 +1,7 @@
 @extends('templates.admin_tpl')
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Administración Concesionarios</div>
-                <div class="panel-body">
 
-                    <table border="0" cellspacing="1" cellpadding="0" width="100%">
 
                         {!!Form ::open(['url'=>'concesionario'])!!} 
                        <div class="form-group">
@@ -43,12 +36,7 @@
                             {!! Form:: submit('guardar',['class'=>'btn btn-primary form-control'])!!}
                         </div>
                         {!! Form:: close()!!}
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                    
 @endsection
 
 
