@@ -1,13 +1,14 @@
-@extends('templates.admin_tpl')
+@extends('templates.adminconcesionario_tpl')
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
- <div class="panel panel-default">
+            <div class="panel panel-default">
                 <div class="panel-heading">Editar Concesionario</div>
                
                {{$concesionario->NOMBRE}}
-                    {!!Form ::model($concesionario,['method'=>'PATCH','action'=>['ConcesionarioController@update',$concesionario->id] ])!!} 
+                                    {!!Form ::model($concesionario,['method'=>'PATCH','action'=>['ConcesionarioController@update',$concesionario->id] ])!!} 
+
                     <!--                        <div class="form-group">
                                                 {!! Form:: label('id','ID:')!!}
                                                 {!! Form:: text('usuario',null,['class'=>'form-control'])!!}

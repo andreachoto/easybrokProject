@@ -55,7 +55,6 @@ class ConcesionarioController extends Controller {
             $mensaje='Concesionario Guardado Correctamente';
             $input= Request::all();
             tmp_concesionario::create($input);
-            //mp_concesionario::create($input);
             return view('concesionario.index')->with('mensajes',$mensaje);
                          
 	}
@@ -84,6 +83,12 @@ class ConcesionarioController extends Controller {
         return view ('concesionario.edit', compact('concesionario'));
 	}
 
+         public function view($id)
+	{
+        $concesionario= tmp_concesionario::find($id);
+        return view ('concesionario.view', compact('concesionario'));
+         
+        }
 	/**
 	 * Update the specified resource in storage.
 	 *
@@ -95,13 +100,15 @@ class ConcesionarioController extends Controller {
 
 	public function update($id,Requests\CreateConcesionarioRequest $request){
         
-        $concesionario= Tmp_concesionario::find($id);
+        $concesionario= tmp_concesionario::find($id);
         $concesionario->update($request->all());
         $mensaje='Guardado Correctamente';
         return view('concesionario.index')->with('mensajes',$mensaje);
         
           }
-
+ 
+        
+        
 	/**
 	 * Remove the specified resource from storage.
 	 *
@@ -112,8 +119,9 @@ class ConcesionarioController extends Controller {
 	{
 	   $concesionario=  tmp_concesionario::find($id);
            $concesionario->delete();
-           return($concesionario);
+           $mensaje='Eliminado Correctamente';
+           return view('concesionario.index')->with('mensajes',$mensaje);
 	}
-        
+       
 
 }
