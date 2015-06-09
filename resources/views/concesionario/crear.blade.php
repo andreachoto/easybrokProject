@@ -42,9 +42,9 @@
 @endsection
 
 
-<!--@section('mensajes')
-            <label>Este es el area de mensajes</label>
-@endsection-->
+@section('mensajes')
+            <label>Este es el area de mensajes Prueba</label>
+@endsection
 
 
 
