@@ -83,6 +83,20 @@ return [
 			'password' => env('DB_PASSWORD', ''),
 			'prefix'   => '',
 		],
+            'oracle' => [
+			'driver'    => 'oracle',
+			'host'      => env('DB_HOST', 'localhost'),
+			'database'  => env('DB_DATABASE', 'forge'),
+                        'service_name' => env('DB_SERVICE', 'prueba'), //(Añadir esta variable solo si se tiene un service name)
+
+			'username'  => env('DB_USERNAME', 'forge'),
+			'password'  => env('DB_PASSWORD', ''),
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+			'strict'    => false,
+		],
+
 
 	],
 
