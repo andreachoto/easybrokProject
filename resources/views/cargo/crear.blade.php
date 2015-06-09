@@ -38,7 +38,7 @@
 
 @endsection
 @section('mensajes')
-<label>Mensaje Prueba Andrea</label>
+<label>Mensaje Prueba Yop</label>
 
 
 @endsection
