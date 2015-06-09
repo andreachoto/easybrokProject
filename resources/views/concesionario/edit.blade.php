@@ -4,8 +4,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Editar Concesionario</div>
-               {{$concesionario->NOMBRE}}
+                <div class="panel-heading">Editar Concesionario</div>               
                {{$concesionario->NOMBRE}}
                                     {!!Form ::model($concesionario,['method'=>'PATCH','action'=>['ConcesionarioController@update',$concesionario->id] ])!!} 
 
