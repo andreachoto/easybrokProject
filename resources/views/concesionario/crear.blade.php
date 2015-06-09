@@ -7,6 +7,7 @@
                        <div class="form-group">
                            
                             {!! Form:: label('id','ID:')!!}
+                            {!! Form:: label('id','ID:')!!}
                             {!! Form:: text('id',null,['class'=>'form-control'])!!}
                         </div>
 
