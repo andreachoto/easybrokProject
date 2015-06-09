@@ -24,11 +24,11 @@
                                 {!! Form:: close()!!}
 
                             </td>
-
-
-                        </tr>
+                         </tr>
                         @endforeach
                     </table>
+                    <a href="{{url('/cargos/create')}}" class="btn btn-warning" style="background:#0A0">Nuevo</a>
+              
                 </div>
             </div>
         </div>

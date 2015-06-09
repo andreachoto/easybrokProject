@@ -45,11 +45,33 @@ class CargosController extends Controller {
 	 */
 	public function store()
 	{
+          
           $mensaje='Cargo Guardado Correctamente';
           $input= Request::all();
+         
           Tmp_cargo::create($input);
           return view('cargo.index')->with('mensajes',$mensaje); 
-        }
+          
+          
+          
+          
+          
+//           $cargo= new Tmp_cargo();
+//           $cargo->NOMBRE=Input::get('NOMBRE');
+//          $validator=  Tmp_cargo::validate(array('NOMBRE'=> Input::get('NOMBRE')));
+//          
+//          if($validator->fails){
+//              $error=$validator->messages()->all();
+//              return view('cargo.index')->with('mensajes',$error); 
+//       
+//              
+//          }
+//          else{
+//              Tmp_cargo::create($input);
+//              return view('cargo.index')->with('mensajes',$mensaje); 
+//           
+//          }
+           }
 
 	/**
 	 * Display the specified resource.
@@ -112,7 +134,9 @@ class CargosController extends Controller {
         
           }
         
-        /**
+        
+
+	/**
 	 * Remove the specified resource from storage.
 	 *
 	 * @param  int  $id

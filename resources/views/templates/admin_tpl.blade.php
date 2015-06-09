@@ -10,6 +10,17 @@
         <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!--CUSTOM STYLES-->
         <link href="assets/css/style.css" rel="stylesheet" />
+        
+        <!--Modificar-->
+        
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FONTAWESOME ICONS STYLES-->
+        <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+        <!--CUSTOM STYLES-->
+        <link href="../assets/css/style.css" rel="stylesheet" />
+        
+        
+        
         <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -150,17 +161,7 @@
                                         <li><a href="#">Provincias</a></li>
                                         <li><a href="#">Ciudades</a></li>
                                                 <li>
-
-                                                   <a href="#">Cargos<span class="fa arrow"></span></a>
-                                                    <ul class="nav nav-third-level">
-                                                        <li><a href="create"> 1. Ingreso</a></li>
-                                                        <li><a href="listar"> 2. Listar</a></li>
-                                                        <li><a href="cargos/show"> 3. Modificar</a></li>
-                                                        <li><a href="#"> 4. Eliminar</a></li>
-                                                    </ul>
-
-                                                  
-
+                                                      <a href="{{url('../cargos/list')}}">Cargos<span class="fa arrow"></span></a>
                                                 </li>
 
                                             </ul>
