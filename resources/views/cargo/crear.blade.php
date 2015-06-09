@@ -38,7 +38,7 @@
 
 @endsection
 @section('mensajes')
-<label>Este es el area de mensajes prueba</label>
+<label>Este es el area de mensajes</label>
 
 
 @endsection
