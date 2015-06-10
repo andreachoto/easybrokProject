@@ -5,10 +5,9 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">Información Usuario</div>
-
-                {{$cargo->NOMBRE}}
+                <!--                {{$cargo->NOMBRE}}
                 {!!Form ::model($cargo,['method'=>'PATCH','action'=>['CargosController@update',$cargo->id] ])!!} 
-                <!--                        <div class="form-group">
+                                        <div class="form-group">
                                             {!! Form:: label('id','ID:')!!}
                                             {!! Form:: text('usuario',null,['class'=>'form-control'])!!}
                                         </div>-->

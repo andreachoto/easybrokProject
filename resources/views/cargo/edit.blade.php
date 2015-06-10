@@ -12,8 +12,6 @@
                                             {!! Form:: label('id','ID:')!!}
                                             {!! Form:: text('usuario',null,['class'=>'form-control'])!!}
                                         </div>-->
-
-
                 <div class="form-group">
                     {!! Form:: label('nombre','Nombre:')!!}
                     {!! Form:: text('NOMBRE',null,['class'=>'form-control'])!!}

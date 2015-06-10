@@ -48,7 +48,6 @@ class CargosController extends Controller {
           
           $mensaje='Cargo Guardado Correctamente';
           $input= Request::all();
-         
           Tmp_cargo::create($input);
           return view('cargo.index')->with('mensajes',$mensaje); 
           
